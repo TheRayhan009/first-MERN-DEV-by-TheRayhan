@@ -72,6 +72,20 @@ Rayprofile is a MERN stack application that provides a platform for managing use
   ```
 - **Response**: "User Updated" or "User Not Found"
 
+## Routes
+- **`server/app/routes/web/route.js`**: Defines the API routes for user management.
+  - `GET /`: Calls the `xx` controller to retrieve all users.
+  - `POST /insurt`: Calls the `insurt` controller to add a new user.
+  - `POST /del`: Calls the `del` controller to delete a user.
+  - `POST /edit`: Calls the `edit` controller to update user information.
+
+## Controllers
+- **`server/app/contollers/webCon.js`**: Contains the logic for handling requests.
+  - `xx`: Retrieves all users from the database.
+  - `insurt`: Inserts a new user into the database.
+  - `del`: Deletes a user based on their phone number.
+  - `edit`: Updates an existing user's information.
+
 ## Dependencies
 
 ### Frontend
