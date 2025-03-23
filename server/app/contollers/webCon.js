@@ -12,7 +12,7 @@ let insurt = async(req,res)=>{
         Pnumber:req.body.Unumber,
     })
 
-    console.log(data);
+    // console.log(data);
 
     data.save();
     res.send("User Saved in Database");
