@@ -86,6 +86,14 @@ Rayprofile is a MERN stack application that provides a platform for managing use
   - `del`: Deletes a user based on their phone number.
   - `edit`: Updates an existing user's information.
 
+## Environment Variables
+To run the application, you need to set up the following environment variables in a `.env` file:
+
+- **DBUrl**: The connection string for the MongoDB database.
+  - Example: `mongodb://localhost:27017/mongoProject`
+- **Port**: The port on which the server will run.
+  - Example: `8000`
+
 ## Dependencies
 
 ### Frontend

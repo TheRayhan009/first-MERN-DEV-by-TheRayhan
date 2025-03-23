@@ -24,7 +24,6 @@ let del = async(req,res)=>{
 
     if(findUserData){
         let detUserData= await modelY.deleteOne({Pnumber:UserPhoneNumber});
-
         res.send("User Deleted");
     }
     else{
@@ -41,7 +40,7 @@ let edit = async(req,res)=>{
 
     if(findUserData){
         let UPDUserData= await modelY.findOneAndUpdate({Pnumber:OldPnumber} ,{$set: { name: Gname, age: Gage, Pnumber: GPnumber }} ,{new:true} );
-
+        
         res.send("User Updated");
     }
     else{
@@ -49,5 +48,4 @@ let edit = async(req,res)=>{
     }
 
 }
-
 module.exports={xx,insurt,del,edit};
